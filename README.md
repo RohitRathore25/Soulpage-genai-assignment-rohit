@@ -55,11 +55,6 @@ pip install -r requirements.txt
 
 Step 2: Set environment variables
 
-NEWS_API = 'd342f4123dbb4c518bf7818f78a6b215'
-ALPHA_VANTAGE = 'KC4A56DNCOF5Q26E'
-GOOGLE_API_KEY3 = 'AIzaSyBlL6ZHX-mbHGLxU-i0ly1nJDcTc1aQ4PA'
-
-
 Step 3: Run the application
 
 python task1_multi_agent/main.py
