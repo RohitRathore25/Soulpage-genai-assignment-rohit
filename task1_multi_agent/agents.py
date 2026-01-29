@@ -15,14 +15,23 @@ model = genai.GenerativeModel('gemini-2.5-flash-lite',
 
 
 def data_collector_agent(state: Dict):
+    """
+    Agent 1: Fetches real-world data using tools
+    """
     company = state["company"]
     tool = state["tool"]
 
-    data = tool(company)
-    return {"company_data": data}
+    company_data = tool(company)
+
+    return {
+        "company_data": company_data
+    }
 
 
 def analyst_agent(state: Dict):
+    """
+    Agent 2: Analyzes data using Gemini
+    """
     company_data = state["company_data"]
 
     prompt = ChatPromptTemplate.from_template("""
@@ -31,14 +40,14 @@ def analyst_agent(state: Dict):
     Company Data:
     {company_data}
 
-    Provide:
-    1. Market summary
-    2. Key insights
-    3. Potential risks
+    Generate:
+    - Market summary
+    - Key insights
+    - Potential risks
     """)
 
     response = model.generate_content(
-    prompt.format(company_data=state['company_data'])
+        prompt.format(company_data = state['company_data'])
     )
     
     return {'final_report': response.text}
