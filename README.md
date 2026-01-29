@@ -55,9 +55,9 @@ pip install -r requirements.txt
 
 Step 2: Set environment variables
 
-GOOGLE_API_KEY=your_gemini_api_key
-NEWS_API_KEY=your_newsapi_key
-ALPHA_VANTAGE_KEY=your_alpha_vantage_key
+NEWS_API = 'd342f4123dbb4c518bf7818f78a6b215'
+ALPHA_VANTAGE = 'KC4A56DNCOF5Q26E'
+GOOGLE_API_KEY3 = 'AIzaSyBlL6ZHX-mbHGLxU-i0ly1nJDcTc1aQ4PA'
 
 
 Step 3: Run the application
@@ -99,5 +99,5 @@ Bonus .ipynb notebook for reproducibility
 
 ## 🔗 Links
 
-- **GitHub Repository:** https://github.com/your-username/Soulpage-genai-assignment-Rohit
-- **Live Demo (Streamlit App):** https://your-app-link.streamlit.app
+- **GitHub Repository:** https://github.com/RohitRathore25/Soulpage-genai-assignment-rohit
+- **Live Demo (Streamlit App):** https://soulpage-genai-assignment-rohit-b9vfcrhzmzpe5wbikxajji.streamlit.app/
