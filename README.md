@@ -55,9 +55,11 @@ pip install -r requirements.txt
 
 Step 2: Set environment variables
 
-NEWS_API  = d342f4123dbb4c518bf7818f78a6b215
+NEWS_API  = from newsapi
 
-ALPHA_VANTAGE = KC4A56DNCOF5Q26E
+ALPHA_VANTAGE = from alphavantage 
+
+GOOGLE_API_KEY = from gemini
 
 Step 3: Run the application
 
